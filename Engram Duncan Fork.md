@@ -6,10 +6,10 @@ rm -rf tokio-docker
 ```
 
 ```console
-# güncelleme
+# Güncelleme
 sudo apt update -y && sudo apt upgrade -y
 
-# repoyu klonlayıp yapılandıralım
+# Repoyu klonlayıp yapılandıralım.
 git clone https://github.com/engram-network/tokio-docker.git 
 cd tokio-docker
 git checkout dencun
@@ -22,7 +22,7 @@ chmod +x ./scripts/*.sh
  mkdir -p execution consensus
 ```
 
-Deposit Bilgilerinin Kurulumu
+<h1 align="center">Deposit Bilgilerinin Kurulumu</h1>
 
 ```eth2-val-tools``` ve ```ethereal``` yüklü olduğunu kontrol ediyoruz.
 
@@ -32,7 +32,7 @@ ethereal version
 ```
 
 ```console
-# Bu işlemi ilk defa node kuruyorsanız uygulayın.Bu komut ile mnemonic oluşturuyor ve yedekliyoruz, akabinde bir EVM cüzdana import ediyoruz.
+# Bu komut ile mnemonic oluşturuyor ve yedekliyoruz, akabinde bir EVM cüzdana import ediyoruz.Ben bu adımı atladım ve mnemonic girilmesi gereken kısımlarda ilk kurduğum nodeun cüzdanını bilgilerini kullandım.Bu konuda kesin bilgim yok o yüzden tercih size kalmış.
  eth2-val-tools mnemonic
 ```
 > Çıkan 24 kelimeyi metamaska import edin.

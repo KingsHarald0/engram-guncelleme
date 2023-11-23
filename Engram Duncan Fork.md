@@ -136,7 +136,7 @@ INFO Subscribed to topics                    topics: ["/eth2/9c4e948f/bls_to_exe
 INFO Successfully finalized deposit tree     finalized deposit count: 1, service: deposit_contract_rpc
 ```
 
-```bash
+```console
 docker logs -f striatum_el 
 
 
@@ -148,7 +148,7 @@ INFO [09-26|19:29:21.046] Forkchoice requested sync to new head    number=30732 
 INFO [09-26|19:29:33.046] Forkchoice requested sync to new head    number=30733 hash=f80ac7..19e5f7 finalized=30652
 ```
 
-```bash
+```console
 docker logs -f lighthouse_vc
 
 INFO Connected to beacon node(s)             synced: 1, available: 1, total: 1, service: notifier
@@ -171,7 +171,7 @@ Nov 23 16:35:18.001 INFO No validators present                   msg: see `light
 ```
 Nodeun onaylanması 30dk--2sa arasında olabilir.
 
-```bash
+```console
 Peerlarda sorun olursa loglar aşağıdaki gibi olacaktır:
 
 striatum_el

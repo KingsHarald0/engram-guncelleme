@@ -61,7 +61,9 @@ bash ./scripts/validator-deposit-data.sh
 ```console
 # On-chain deposit datasını düzenliyoruz.
 docker run -it --rm -v $(pwd)/validator_keys:/app/validator_keys engramnet/staking-deposit-cli:dencun existing-mnemonic --num_validators=1 --validator_start_index=0
+```
 
+```console
 # Kodu çalıştırdıktan sonra soruları cevaplıyoruz.
 1.İngilizce için 3,Türkçe için 11 yazıp enter'a basın.
 2.Deposit datası min. heighttan başlayacağı için 0 yazıp enter'a basın.

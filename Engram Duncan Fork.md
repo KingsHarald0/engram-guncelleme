@@ -121,9 +121,12 @@ docker compose up -d
 <h1 align="center">Log kontrolleri</h1>
 
 ```console
+# Explorer:https://beaconscan-v2.engram.tech/  
+# striatum_el=Block
+# lighthouse_cl=Slot
+
 # İlk olarak buradan loglara bakıyoruz:
 docker logs lighthouse_cl -f
-# Başta herhangi bir şekilde sync olmayacağını göreceksiniz fakat biraz zaman verin.
 
 INFO Subscribed to topics
 INFO Sync state updated                      new_state: Evaluating known peers, old_state: Syncing Finalized Chain, service: sync
@@ -134,7 +137,9 @@ INFO Successfully finalized deposit tree     finalized deposit count: 1, service
 ```
 
 ```bash
-docker logs -f striatum_el
+docker logs -f striatum_el 
+
+
 
 INFO [09-26|19:28:45.046] Forkchoice requested sync to new head    number=30729 hash=a38be3..648659 finalized=30652
 INFO [09-26|19:28:57.045] Forkchoice requested sync to new head    number=30730 hash=eb3642..45f557 finalized=30652

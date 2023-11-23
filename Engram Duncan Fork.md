@@ -166,3 +166,4 @@ WARN Oct 03 04:59:39.001 INFO Searching for peers                     current_sl
 WARN Oct 03 04:59:39.001 WARN Syncing deposit contract block cache    est_blocks_remaining: initializing deposits, service: slot_notifier
 ```
 
+![image](https://github.com/KingsHarald0/engram-guncelleme/blob/b49ef2f0b6301b819181bcbea7e05ecefc00417f/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202023-11-23%20172824.png)

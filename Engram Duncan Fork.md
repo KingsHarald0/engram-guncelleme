@@ -31,7 +31,7 @@ eth2-val-tools --help
 ethereal version
 ```
 
-```
+```console
 # Bu işlemi ilk defa node kuruyorsanız uygulayın.Bu komut ile mnemonic oluşturuyor ve yedekliyoruz, akabinde bir EVM cüzdana import ediyoruz.
  eth2-val-tools mnemonic
 ```

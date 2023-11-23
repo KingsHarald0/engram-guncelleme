@@ -33,7 +33,7 @@ ethereal version
 
 ```
 # Bu işlemi ilk defa node kuruyorsanız uygulayın.Bu komut ile mnemonic oluşturuyor ve yedekliyoruz, akabinde bir EVM cüzdana import ediyoruz.
-eth2-val-tools mnemonic
+ eth2-val-tools mnemonic
 ```
 > Çıkan 24 kelimeyi metamaska import edin.
 

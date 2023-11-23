@@ -33,7 +33,7 @@ ethereal version
 
 ```console
 # Bu komut ile mnemonic oluşturuyor ve yedekliyoruz, akabinde bir EVM cüzdana import ediyoruz.
-#Ben bu adımı atladım ve mnemonic girilmesi gereken kısımlarda ilk kurduğum nodeun cüzdanını bilgilerini kullandım.Bu konuda kesin bilgim yok o yüzden tercih size kalmış.
+# Ben bu adımı atladım ve mnemonic girilmesi gereken kısımlarda ilk kurduğum nodeun cüzdanını bilgilerini kullandım.Bu konuda kesin bilgim yok o yüzden tercih size kalmış.
  eth2-val-tools mnemonic
 ```
 > Çıkan 24 kelimeyi metamaska import edin.

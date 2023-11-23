@@ -184,7 +184,7 @@ WARN [10-03|04:55:47.172] Beacon client online, but no consensus updates receive
 lighthouse_cl
 INFO Oct 03 04:59:39.001 WARN Low peer count                          peer_count: 0, service: slot_notifier
 WARN Oct 03 04:59:39.001 INFO Searching for peers                     current_slot: 78259, head_slot: 5248, finalized_epoch: 162, finalized_root: 0xa9c8…f1f7, peers: 0, service: slot_notifier
-WARN Oct 03 04:59:39.001 WARN Syncing deposit contract block cache    est_blocks_remaining: initializing deposits, service: slot_notifier
+WARN Oct 03 04:59:39.001 WARN Syncing deposit contract block cache    est_blocks_remaining: initializing deposits, service: slot_notifier.
 ```
 
 ![image](https://github.com/KingsHarald0/engram-guncelleme/blob/b49ef2f0b6301b819181bcbea7e05ecefc00417f/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202023-11-23%20172824.png)

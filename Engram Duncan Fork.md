@@ -157,7 +157,8 @@ INFO Connected to beacon node(s)             synced: 1, available: 1, total: 1,
 INFO Validator exists in beacon chain        fee_recipient: 0x617b…063d,
 INFO Awaiting activation                     slot: 17409, epoch: 544, validators: 32, service: notifier
 
-# Bendeki loglar bu şekilde
+Bendeki loglar bu şekilde:
+
 Nov 23 16:34:30.001 INFO No validators present                   msg: see `lighthouse vm create --help` or the HTTP API documentation, service: notifier
 Nov 23 16:34:42.000 INFO Connected to beacon node(s)             synced: 1, available: 1, total: 1, service: notifier
 Nov 23 16:34:42.001 INFO No validators present                   msg: see `lighthouse vm create --help` or the HTTP API documentation, service: notifier
@@ -171,7 +172,7 @@ Nov 23 16:35:18.001 INFO No validators present                   msg: see `light
 ```
 Nodeun onaylanması 30dk--2sa arasında olabilir.
 
-```console
+```bash
 Peerlarda sorun olursa loglar aşağıdaki gibi olacaktır:
 
 striatum_el

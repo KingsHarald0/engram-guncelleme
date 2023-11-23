@@ -93,12 +93,12 @@ Verifying your keystores:         [####################################]  32/32
 # Docker compose'u açalım:
 sudo nano docker-compose.yml
 
-#Aşağıdaki kısımları değiştirelim
+# Aşağıdaki kısımları değiştirelim
 identity=Huemint << Discord adınızı girin.
 enr-address=0.0.0.0 << IPAddresinizi girin.
 graffiti=Huemint << Nickname girin.
 
-#Çalıştıralım
+# Çalıştıralım
 docker compose up -d
 
 
@@ -127,7 +127,7 @@ INFO Subscribed to topics                    topics: ["/eth2/9c4e948f/bls_to_exe
 INFO Successfully finalized deposit tree     finalized deposit count: 1, service: deposit_contract_rpc
 ```
 
-```console
+```bash
  docker logs -f striatum_el
 
 INFO [09-26|19:28:45.046] Forkchoice requested sync to new head    number=30729 hash=a38be3..648659 finalized=30652
@@ -137,7 +137,7 @@ INFO [09-26|19:29:21.046] Forkchoice requested sync to new head    number=30732 
 INFO [09-26|19:29:33.046] Forkchoice requested sync to new head    number=30733 hash=f80ac7..19e5f7 finalized=30652
 ```
 
-```console
+```bash
  docker logs -f lighthouse_vc
 
 INFO Connected to beacon node(s)             synced: 1, available: 1, total: 1, service: notifier
@@ -147,10 +147,10 @@ INFO Validator exists in beacon chain        fee_recipient: 0x617b…063d,
 INFO Awaiting activation                     slot: 17409, epoch: 544, validators: 32, service: notifier
 
 
-#Nodeun onaylanması 30dk--2sa arasında olabilir.
+# Nodeun onaylanması 30dk--2sa arasında olabilir.
 ```
 
-```console
+```bash
 Peerlarda sorun olursa loglar aşağıdaki gibi olacaktır:
 
 striatum_el

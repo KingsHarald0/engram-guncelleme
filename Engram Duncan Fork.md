@@ -99,11 +99,11 @@ Verifying your keystores:         [####################################]  32/32
 sudo nano docker-compose.yml
 
 # Aşağıdaki kısımları değiştirelim
-ethstats=YourNameNodeHere YourNameNodeHere kısmını node/community adı ile değiştirin.
-identity=Huemint << Discord adınızı girin.
-graffiti=Huemint << Discord adınızı girin.
+ethstats=YourNameNodeHere  << YourNameNodeHere kısmını node/community adı ile değiştirin.
+identity=Huemint << Discord nickinizi girin.
+graffiti=Huemint << Discord nickinizi girin
 enr-address=0.0.0.0 << IPAddresinizi girin.
-suggested-fee-recipient=0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266  << Cüzdan adresinizi girin.
+suggested-fee-recipient=0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 << Kendi cüzdan adresimizi giriyoruz.
 graffiti=Huemint << Nickname girin.
 
 # Çalıştıralım

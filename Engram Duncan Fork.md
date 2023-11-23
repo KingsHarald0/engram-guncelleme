@@ -102,7 +102,7 @@ sudo nano docker-compose.yml
 ethstats=YourNameNodeHere YourNameNodeHere kısmını node/community adı ile değiştirin.
 identity=Huemint << Discord adınızı girin.
 enr-address=0.0.0.0 << IPAddresinizi girin.
-graffiti=Huemint << Nickname girin.
+graffiti=Huemint << Nickname girin.2 tane var.
 
 # Çalıştıralım
 docker compose up -d

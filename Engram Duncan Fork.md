@@ -32,7 +32,8 @@ ethereal version
 ```
 
 ```console
-# Bu komut ile mnemonic oluşturuyor ve yedekliyoruz, akabinde bir EVM cüzdana import ediyoruz.Ben bu adımı atladım ve mnemonic girilmesi gereken kısımlarda ilk kurduğum nodeun cüzdanını bilgilerini kullandım.Bu konuda kesin bilgim yok o yüzden tercih size kalmış.
+# Bu komut ile mnemonic oluşturuyor ve yedekliyoruz, akabinde bir EVM cüzdana import ediyoruz.
+#Ben bu adımı atladım ve mnemonic girilmesi gereken kısımlarda ilk kurduğum nodeun cüzdanını bilgilerini kullandım.Bu konuda kesin bilgim yok o yüzden tercih size kalmış.
  eth2-val-tools mnemonic
 ```
 > Çıkan 24 kelimeyi metamaska import edin.
@@ -72,7 +73,7 @@ docker run -it --rm -v $(pwd)/validator_keys:/app/validator_keys engramnet/staki
 2.Deposit datası min. heighttan başlayacağı için 0 yazıp enter'a basın.
 3.24 kelimeyi girip enter a basın.(İsterseniz her kelimenin yalnızca ilk 4 harfini girmeniz yeterlidir.)
 4.Chain ismini seçiyoruz. testnet yazıp enter a basın.
-5.Min. 8 karakter/sayyıdan oluşan şifre oluşturun.(Şifre dosyasını tokio-docker/custom_config_data klasöründe bulabilirsiniz.)
+5.Min. 8 karakter/sayıdan oluşan şifre oluşturun.(Şifre dosyasını tokio-docker/custom_config_data klasöründe bulabilirsiniz.)
 6.Şifreyi tekrar girin.
 
 # Daha sonra aşağıdaki gibi bir ekran karşınıza çıkacak.
@@ -88,7 +89,9 @@ Creating your keys.
 Creating your keys:               [####################################]  32/32          
 Creating your keystores:          [####################################]  32/32          
 Creating your depositdata:        [####################################]  32/32          
-Verifying your keystores:         [####################################]  32/32          
+Verifying your keystores:         [####################################]  32/32
+
+#İşlem tamamlanınca en altta "Press any key" yazısını görünce enter a basın.
 ```
 
 ```console
@@ -96,6 +99,7 @@ Verifying your keystores:         [####################################]  32/32
 sudo nano docker-compose.yml
 
 # Aşağıdaki kısımları değiştirelim
+ethstats=YourNameNodeHere YourNameNodeHere kısmını node/community adı ile değiştirin.
 identity=Huemint << Discord adınızı girin.
 enr-address=0.0.0.0 << IPAddresinizi girin.
 graffiti=Huemint << Nickname girin.
@@ -148,7 +152,16 @@ INFO Connected to beacon node(s)             synced: 1, available: 1, total: 1,
 INFO Validator exists in beacon chain        fee_recipient: 0x617b…063d,
 INFO Awaiting activation                     slot: 17409, epoch: 544, validators: 32, service: notifier
 
-
+# Bendeki loglar bu şekilde
+Nov 23 16:34:30.001 INFO No validators present                   msg: see `lighthouse vm create --help` or the HTTP API documentation, service: notifier
+Nov 23 16:34:42.000 INFO Connected to beacon node(s)             synced: 1, available: 1, total: 1, service: notifier
+Nov 23 16:34:42.001 INFO No validators present                   msg: see `lighthouse vm create --help` or the HTTP API documentation, service: notifier
+Nov 23 16:34:54.000 INFO Connected to beacon node(s)             synced: 1, available: 1, total: 1, service: notifier
+Nov 23 16:34:54.000 INFO No validators present                   msg: see `lighthouse vm create --help` or the HTTP API documentation, service: notifier
+Nov 23 16:35:06.000 INFO Connected to beacon node(s)             synced: 1, available: 1, total: 1, service: notifier
+Nov 23 16:35:06.001 INFO No validators present                   msg: see `lighthouse vm create --help` or the HTTP API documentation, service: notifier
+Nov 23 16:35:18.001 INFO Connected to beacon node(s)             synced: 1, available: 1, total: 1, service: notifier
+Nov 23 16:35:18.001 INFO No validators present                   msg: see `lighthouse vm create --help` or the HTTP API documentation, service: notifier
 
 ```
 Nodeun onaylanması 30dk--2sa arasında olabilir.

@@ -138,9 +138,8 @@ INFO Successfully finalized deposit tree     finalized deposit count: 1, service
 
 ```console
 docker logs -f striatum_el 
-
-
-
+```
+```bash
 INFO [09-26|19:28:45.046] Forkchoice requested sync to new head    number=30729 hash=a38be3..648659 finalized=30652
 INFO [09-26|19:28:57.045] Forkchoice requested sync to new head    number=30730 hash=eb3642..45f557 finalized=30652
 INFO [09-26|19:29:09.046] Forkchoice requested sync to new head    number=30731 hash=b9fd32..3748bd finalized=30652
@@ -149,8 +148,8 @@ INFO [09-26|19:29:33.046] Forkchoice requested sync to new head    number=30733 
 ```
 
 ```console
-docker logs -f lighthouse_vc
-
+docker logs -f lighthouse_vc```
+```bash
 INFO Connected to beacon node(s)             synced: 1, available: 1, total: 1, service: notifier
 INFO All validators active                   slot: 32836, epoch: 1026, total_validators: 32, active_validators: 32
 INFO Connected to beacon node(s)             synced: 1, available: 1, total: 1,

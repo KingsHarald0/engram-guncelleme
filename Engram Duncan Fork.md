@@ -148,7 +148,8 @@ INFO [09-26|19:29:33.046] Forkchoice requested sync to new head    number=30733 
 ```
 
 ```console
-docker logs -f lighthouse_vc```
+docker logs -f lighthouse_vc
+```
 ```bash
 INFO Connected to beacon node(s)             synced: 1, available: 1, total: 1, service: notifier
 INFO All validators active                   slot: 32836, epoch: 1026, total_validators: 32, active_validators: 32

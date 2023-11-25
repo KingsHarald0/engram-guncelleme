@@ -159,8 +159,12 @@ INFO Connected to beacon node(s)             synced: 1, available: 1, total: 1,
 INFO Validator exists in beacon chain        fee_recipient: 0x617b…063d,
 INFO Awaiting activation                     slot: 17409, epoch: 544, validators: 32, service: notifier
 
-Bendeki loglar bu şekilde:
+```
+Nodeun onaylanması 30dk--2sa arasında olabilir.
 
+## Eğer <docker logs -f lighthouse_vc> komutu loglarınız aşağıdaki gibi ise;password.txt dosyasını kontrol etmeniz gerekiyor.
+
+```bash
 Nov 23 16:34:30.001 INFO No validators present                   msg: see `lighthouse vm create --help` or the HTTP API documentation, service: notifier
 Nov 23 16:34:42.000 INFO Connected to beacon node(s)             synced: 1, available: 1, total: 1, service: notifier
 Nov 23 16:34:42.001 INFO No validators present                   msg: see `lighthouse vm create --help` or the HTTP API documentation, service: notifier
@@ -170,9 +174,23 @@ Nov 23 16:35:06.000 INFO Connected to beacon node(s)             synced: 1, avai
 Nov 23 16:35:06.001 INFO No validators present                   msg: see `lighthouse vm create --help` or the HTTP API documentation, service: notifier
 Nov 23 16:35:18.001 INFO Connected to beacon node(s)             synced: 1, available: 1, total: 1, service: notifier
 Nov 23 16:35:18.001 INFO No validators present                   msg: see `lighthouse vm create --help` or the HTTP API documentation, service: notifier
-
 ```
-Nodeun onaylanması 30dk--2sa arasında olabilir.
+
+```console
+# Dosyanın içi kurulumda oluşturduğunuz şifre yerine 0x.... şeklinde ise 0x.... i silip yerine şifrenizi girmeniz lazım.Bunu yapmanın 2 yolu var.
+# 1.Mobaxterm/Winscp ile direkt dosya üzerinden.
+cd tokio-docker
+docker compose down 
+# Node u durdurduktan sonra <tokio-docker/custom_config_data> dizinine girip password.txt dosyasında düzenlemeyi yapıp kayıt edin.
+docker compose up -d # ile node unuzu yeniden başlatın.
+
+# 2.Terminal üzerinden.
+cd tokio-docker
+docker compose down 
+cd tokio-docker/custom_config_data 
+sudo nano password.txt #Düzeltmeyi yaptıktan sonra Ctrl X+Y enter yapın.
+cd ..
+docker compose up -d```
 
 ```bash
 Peerlarda sorun olursa loglar aşağıdaki gibi olacaktır:

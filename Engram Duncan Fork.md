@@ -160,7 +160,7 @@ INFO Validator exists in beacon chain        fee_recipient: 0x617b…063d,
 INFO Awaiting activation                     slot: 17409, epoch: 544, validators: 32, service: notifier
 
 ```
-Nodeun onaylanması 30dk--2sa arasında olabilir.
+>Nodeun onaylanması 30dk--2sa arasında olabilir.
 
 ## Eğer ```docker logs -f lighthouse_vc``` komutu loglarınız aşağıdaki gibi ise ```password.txt``` dosyasını kontrol etmeniz gerekiyor.
 

@@ -193,8 +193,8 @@ cd ..
 docker compose up -d
 ```
 
+### Peerlarda sorun olursa loglar aşağıdaki gibi olacaktır:
 ```bash
-Peerlarda sorun olursa loglar aşağıdaki gibi olacaktır:
 
 striatum_el
 WARN [10-03|04:50:47.133] Beacon client online, but no consensus updates received in a while. Please fix your beacon client to follow the chain! 

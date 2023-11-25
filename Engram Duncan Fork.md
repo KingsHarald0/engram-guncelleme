@@ -175,9 +175,9 @@ Nov 23 16:35:06.001 INFO No validators present                   msg: see `light
 Nov 23 16:35:18.001 INFO Connected to beacon node(s)             synced: 1, available: 1, total: 1, service: notifier
 Nov 23 16:35:18.001 INFO No validators present                   msg: see `lighthouse vm create --help` or the HTTP API documentation, service: notifier
 ```
-
+### Dosyanın içi kurulumda oluşturduğunuz şifre yerine 0x.... şeklinde ise 0x.... i silip yerine şifrenizi girmeniz lazım.Bunu yapmanın 2 yolu var.
 ```console
-# Dosyanın içi kurulumda oluşturduğunuz şifre yerine 0x.... şeklinde ise 0x.... i silip yerine şifrenizi girmeniz lazım.Bunu yapmanın 2 yolu var.
+
 # 1.Mobaxterm/Winscp ile direkt dosya üzerinden.
 cd tokio-docker
 docker compose down 

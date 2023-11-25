@@ -190,7 +190,8 @@ docker compose down
 cd tokio-docker/custom_config_data 
 sudo nano password.txt #Düzeltmeyi yaptıktan sonra Ctrl X+Y enter yapın.
 cd ..
-docker compose up -d```
+docker compose up -d
+```
 
 ```bash
 Peerlarda sorun olursa loglar aşağıdaki gibi olacaktır:

@@ -162,7 +162,7 @@ INFO Awaiting activation                     slot: 17409, epoch: 544, validators
 ```
 Nodeun onaylanması 30dk--2sa arasında olabilir.
 
-## Eğer <docker logs -f lighthouse_vc> komutu loglarınız aşağıdaki gibi ise;password.txt dosyasını kontrol etmeniz gerekiyor.
+## Eğer >docker logs -f lighthouse_vc komutu loglarınız aşağıdaki gibi ise;password.txt dosyasını kontrol etmeniz gerekiyor.
 
 ```bash
 Nov 23 16:34:30.001 INFO No validators present                   msg: see `lighthouse vm create --help` or the HTTP API documentation, service: notifier
